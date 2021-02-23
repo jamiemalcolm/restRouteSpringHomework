@@ -67,4 +67,8 @@ public class Folder {
     public void setId(Long id) {
         this.id = id;
     }
+
+    public void addFile(File file) {
+        this.files.add(file);
+    }
 }

@@ -49,8 +49,26 @@ public class DataLoder implements ApplicationRunner {
         fileRepository.save(file5);
         File file6 = new File("helloWorld", ".py", 1, folder3);
         fileRepository.save(file6);
+
+        folder1.addFile(file1);
+        folderRepository.save(folder1);
+        folder2.addFile(file2);
+        folder2.addFile(file5);
+        folderRepository.save(folder2);
+        folder3.addFile(file3);
+        folder3.addFile(file4);
+        folder3.addFile(file6);
+        folderRepository.save(folder3);
+
         jamie.addFolder(folder1);
         jamie.addFolder(folder2);
+        userRepository.save(jamie);
+        laura.addFolder(folder3);
+        userRepository.save(laura);
+
+
+
+
 
 
 
