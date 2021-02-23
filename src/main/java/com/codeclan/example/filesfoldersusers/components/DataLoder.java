@@ -56,7 +56,7 @@ public class DataLoder implements ApplicationRunner {
         folder1.addFile(file1);
         folderRepository.save(folder1);
         jamie.addFolder(folder1);
-        userRepository.save(jamie);
+//        userRepository.save(jamie);
         folder2.addFile(file2);
         folder2.addFile(file5);
         jamie.addFolder(folder2);
